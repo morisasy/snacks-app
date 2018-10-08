@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1> Delicious Snacks!</h1>
+    <h2>Extended template!</h2>
+    {% for snack in snacks %}
+    <div><p>{{ snack.name }} says: <b>{{ snack.kind }}</b></p></div>
+    {% endfor %}
+{% endblock %}
